@@ -9,8 +9,8 @@ import java.sql.Statement;
 public class ConnDB {
 	private static final String getDriver="com.mysql.jdbc.Driver";
 	private static final String getUrl="jdbc:mysql://localhost:3306/51cto";
-	private static final String getUser="root";
-	private static final String getPwd="1264895271";
+	private static final String getUser="******";
+	private static final String getPwd="********";
 	Connection conn=null;
 	Statement stat=null;
 	ResultSet rs=null;
