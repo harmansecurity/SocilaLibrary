@@ -163,6 +163,7 @@
 # 联系作者
 
 - [Harman's Personal Website](http://harmansecurity.cn/)
+- 邮箱：`lianghui_1994@163.com`
 
 
 -----
