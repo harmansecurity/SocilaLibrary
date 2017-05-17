@@ -5,26 +5,25 @@
 　 　由于我之前的数据库中已经有数据为了方便演示，我把数据删掉，正好也回顾一下MySql的使用。我使用的是Navicat这个支持MySql的可视化工具，由于数据比较多，我直接从CMD终端进行操作删除。
 
 * 很多时候我们电脑的MySQL服务没有开启，`net start mysql`开启MySQL服务。
-<div align=center>
+
 ![](http://ojto7c1rw.bkt.clouddn.com/%E6%90%AD%E5%BB%BA%E7%A4%BE%E5%B7%A5%E5%BA%931.png)
-</div>
+
 * 进入MySQL数据库,在终端中输入`mysql -u root -p`,根据提示输入密码。
-<div align=center>
+
 ![](http://ojto7c1rw.bkt.clouddn.com/%E6%90%AD%E5%BB%BA%E7%A4%BE%E5%B7%A5%E5%BA%932.png)
-</div>
 
 * 查看所有的数据库，`show databases;`我们会看到之前新建的数据库。
-<div align=center>
+
 ![](http://ojto7c1rw.bkt.clouddn.com/%E6%90%AD%E5%BB%BA%E7%A4%BE%E5%B7%A5%E5%BA%933.png)
-</div>
+
 * 使用之前的数据库`use <库名>;`,然后查看当前数据库下面的表,`show tables;`。
-<div align=center>
+
 ![](http://ojto7c1rw.bkt.clouddn.com/%E6%90%AD%E5%BB%BA%E7%A4%BE%E5%B7%A5%E5%BA%934.png)
-</div>
+
 * 删除表里面的所有数据`delete from <表名>;`。
-<div align=center>
+
 ![](http://ojto7c1rw.bkt.clouddn.com/%E6%90%AD%E5%BB%BA%E7%A4%BE%E5%B7%A5%E5%BA%935.png)
-</div>
+
 
 ##### 处理数据，实现保存和查询的功能
 　 　我得到的数据是txt格式，每一行是用户名，密码，邮箱，由于这一行数据可能是以多个空格或者分号或者只有用户名没有密码，所以还需要对每一行的数据进行适当的处理然后保存到数据库中。我读取了一下txt文件，txt中有二百多万条数据，大概花了40秒左右，但是将数据存储到数据库中花的时间太长了，由于时间的原因，只向数据库中插入了十万多条数据。
@@ -151,9 +150,8 @@
 ```
 
 * Eclipse控制台运行效果
-<div align=center>
+
 ![](http://ojto7c1rw.bkt.clouddn.com/%E6%90%AD%E5%BB%BA%E7%A4%BE%E5%B7%A5%E5%BA%936.png)
-</div>
   
 　 　时间的原因，我先暂时不做一个网页了，做一个搜索的网页无非就是一个搜索栏然后连接数据库查询数据，实现起来不是很难。**如果对数据感兴趣的朋友可以私聊我或者留言，到时候转发给你，如果做违法犯罪行为，本人概不负责任。**
 
